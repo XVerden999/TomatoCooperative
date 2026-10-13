@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An academic presentation of information management across a South African smallholder tomato cooperative supply chain.">
+  <title>From Farm to Market | INF1781 Group Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="From Farm to Market home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span><strong>From Farm to Market</strong><small>INF1781 · Group Project</small></span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#supply-chain">Supply chain</a>
+        <a href="#data">Data</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#ai">AI & decisions</a>
+        <a href="#systems">Systems</a>
+        <a href="#recommendations" class="nav-cta">Recommendations <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> INFORMATION SYSTEMS · SOUTH AFRICA</p>
+          <h1>Better information.<br><em>Stronger supply chains.</em></h1>
+          <p class="hero-lead">A practical look at how information systems can help a smallholder tomato cooperative connect farmers, processors and retailers, from the first harvest record to the final delivery.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#supply-chain">Explore the project <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#recommendations">View our recommendations <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon" aria-hidden="true">i</span><p>This website presents the group's academic case study. Dashboard quantities are illustrative examples, not live operational data.</p></div>
+        </div>
+        <div class="hero-art" aria-label="Illustration of a tomato, leaves and a harvest crate" role="img">
+          <div class="sun"></div>
+          <div class="field field-back"></div>
+          <div class="field field-front"></div>
+          <div class="leaf leaf-one"></div><div class="leaf leaf-two"></div><div class="leaf leaf-three"></div>
+          <div class="tomato"><span class="tomato-shine"></span><span class="calyx"></span></div>
+          <div class="crate"><span></span><span></span><span></span></div>
+          <div class="art-label label-top"><span class="label-dot"></span> TRACEABLE BATCHES</div>
+          <div class="art-label label-bottom"><strong>FARM</strong><span>→</span><strong>MARKET</strong></div>
+          <p class="art-caption">A connected journey, one shared record at a time.</p>
+        </div>
+      </div>
+      <div class="container hero-stats">
+        <div><span class="stat-number">01</span><span class="stat-label">Shared batch reference</span></div>
+        <div><span class="stat-number">04</span><span class="stat-label">Core supply-chain stages</span></div>
+        <div><span class="stat-number">POPIA</span><span class="stat-label">Privacy-aware information use</span></div>
+        <div><span class="stat-number">Pilot</span><span class="stat-label">Start small, improve steadily</span></div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="supply-chain">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">01 / THE BIG PICTURE</p>
+          <h2>One supply chain.<br><em>Many connected decisions.</em></h2>
+          <p>Produce moves physically through the supply chain, while information must move alongside it. Shared records give each participant a clearer picture of what was harvested, dispatched, received and ordered.</p>
+        </div>
+        <div class="chain">
+          <article class="chain-step">
+            <div class="step-icon icon-farm" aria-hidden="true"><span>⌁</span></div>
+            <span class="step-number">STAGE 01</span>
+            <h3>Farm & harvest</h3>
+            <p>Record the farm, harvest date, batch reference and quantity in kilograms.</p>
+            <span class="step-tag">Harvest record</span>
+          </article>
+          <div class="chain-arrow" aria-hidden="true">→</div>
+          <article class="chain-step">
+            <div class="step-icon icon-coop" aria-hidden="true"><span>▤</span></div>
+            <span class="step-number">STAGE 02</span>
+            <h3>Cooperative & dispatch</h3>
+            <p>Verify the batch, record the loaded quantity and capture departure details.</p>
+            <span class="step-tag">Dispatch record</span>
+          </article>
+          <div class="chain-arrow" aria-hidden="true">→</div>
+          <article class="chain-step">
+            <div class="step-icon icon-process" aria-hidden="true"><span>▥</span></div>
+            <span class="step-number">STAGE 03</span>
+            <h3>Processor & receipt</h3>
+            <p>Confirm the received weight, arrival time, grade and any rejected produce.</p>
+            <span class="step-tag">Receiving record</span>
+          </article>
+          <div class="chain-arrow" aria-hidden="true">→</div>
+          <article class="chain-step">
+            <div class="step-icon icon-market" aria-hidden="true"><span>⌂</span></div>
+            <span class="step-number">STAGE 04</span>
+            <h3>Retailer & order</h3>
+            <p>View confirmed stock, track orders and coordinate expected delivery dates.</p>
+            <span class="step-tag">Order record</span>
+          </article>
+        </div>
+        <div class="insight-banner">
+          <div class="insight-icon" aria-hidden="true">↗</div>
+          <div><strong>The link between each stage is the batch reference.</strong><p>Use the same unique reference on the harvest, dispatch and receiving records. If quantities differ, the cooperative can investigate the specific batch instead of guessing what happened.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="data">
+      <div class="container two-column">
+        <div class="section-heading sticky-heading">
+          <p class="eyebrow">02 / DATA MANAGEMENT</p>
+          <h2>Turn raw records into <em>useful information.</em></h2>
+          <p>Data is a recorded fact. Information is data placed in a context that helps someone make a decision.</p>
+          <div class="example-card">
+            <span class="example-label">A SIMPLE EXAMPLE</span>
+            <div class="example-equation"><strong>2,000 kg</strong><span>recorded harvest</span></div>
+            <div class="example-divider"></div>
+            <div class="example-equation"><strong>2,500 kg</strong><span>confirmed order</span></div>
+            <div class="shortfall"><span aria-hidden="true">!</span><div><strong>Potential shortfall: 500 kg</strong><small>Flagged before transport is finalised.</small></div></div>
+          </div>
+        </div>
+        <div class="data-content">
+          <article class="content-row">
+            <span class="content-index">01</span><div><h3>Collect consistently</h3><p>Use a shared form with required fields such as farm ID, batch ID, harvest date and weight. Consistent fields make records easier to compare and reconcile.</p></div>
+          </article>
+          <article class="content-row">
+            <span class="content-index">02</span><div><h3>Store responsibly</h3><p>Keep records organised and access-controlled. Define who can create, view, correct and approve each type of record.</p></div>
+          </article>
+          <article class="content-row">
+            <span class="content-index">03</span><div><h3>Check quality</h3><p>Information should be accurate, complete, consistent, timely, valid and unique. A polished chart cannot compensate for unreliable source records.</p></div>
+          </article>
+          <article class="content-row">
+            <span class="content-index">04</span><div><h3>Share what each role needs</h3><p>Processors need inbound quantities and arrival details. Retailers need confirmed available stock and order dates, not every internal farm note.</p></div>
+          </article>
+          <div class="quality-panel">
+            <h3>Six dimensions of information quality</h3>
+            <div class="quality-tags"><span>Accuracy</span><span>Completeness</span><span>Consistency</span><span>Timeliness</span><span>Validity</span><span>Uniqueness</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dashboard-section">
+      <div class="container">
+        <div class="section-heading section-heading-wide">
+          <p class="eyebrow">03 / VISUALISATION</p>
+          <h2>A small dashboard can reveal <em>where to investigate.</em></h2>
+          <p>The project uses fictional figures to demonstrate how a cooperative could compare quantities at different stages. These values are illustrative only and do not represent real farms or live deliveries.</p>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard-top">
+            <div><span class="dash-kicker">EXAMPLE REPORT</span><h3>Tomato movement overview</h3><p>Illustrative reporting period · Three farms</p></div>
+            <span class="demo-badge"><span></span> DEMO DATA</span>
+          </div>
+          <div class="kpi-grid">
+            <article class="kpi-card"><span class="kpi-label">HARVESTED</span><strong>6,300 <small>kg</small></strong><span class="kpi-foot"><span class="kpi-dot dot-green"></span> Recorded at farm level</span></article>
+            <article class="kpi-card"><span class="kpi-label">DISPATCHED</span><strong>6,180 <small>kg</small></strong><span class="kpi-foot"><span class="kpi-dot dot-amber"></span> Loaded for transport</span></article>
+            <article class="kpi-card"><span class="kpi-label">RECEIVED</span><strong>6,070 <small>kg</small></strong><span class="kpi-foot"><span class="kpi-dot dot-red"></span> Confirmed by processor</span></article>
+            <article class="kpi-card kpi-highlight"><span class="kpi-label">RECEIPT / DISPATCH</span><strong>98.22<small>%</small></strong><span class="kpi-foot">6,070 ÷ 6,180 × 100</span></article>
+          </div>
+          <div class="chart-area">
+            <div class="chart-title"><div><h4>Quantity by supply-chain stage</h4><p>Measured in kilograms (kg)</p></div><span class="chart-legend"><i></i> Quantity recorded</span></div>
+            <div class="bar-chart" role="img" aria-label="Bar chart: harvested 6300 kilograms, dispatched 6180 kilograms, received 6070 kilograms">
+              <div class="bar-row"><span class="bar-name">Harvested</span><div class="bar-track"><div class="bar-fill bar-harvest" style="width:100%"></div></div><strong>6,300</strong></div>
+              <div class="bar-row"><span class="bar-name">Dispatched</span><div class="bar-track"><div class="bar-fill bar-dispatch" style="width:98.1%"></div></div><strong>6,180</strong></div>
+              <div class="bar-row"><span class="bar-name">Received</span><div class="bar-track"><div class="bar-fill bar-received" style="width:96.3%"></div></div><strong>6,070</strong></div>
+            </div>
+            <div class="chart-foot"><span>0 kg</span><span>6,300 kg</span></div>
+          </div>
+          <div class="dashboard-bottom">
+            <div class="finding"><span class="finding-icon">↔</span><div><strong>120 kg difference</strong><p>Harvested minus dispatched</p></div></div>
+            <div class="finding"><span class="finding-icon">⌕</span><div><strong>110 kg difference</strong><p>Dispatched minus received</p></div></div>
+            <p class="caution-note"><strong>Important:</strong> Differences are not automatically proof of waste, spoilage or theft. The manager should check batch records and investigate the cause.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section privacy-section" id="privacy">
+      <div class="container privacy-grid">
+        <div class="section-heading">
+          <p class="eyebrow">04 / ETHICS & PRIVACY</p>
+          <h2>Trust is part of the <em>infrastructure.</em></h2>
+          <p>Farm records can include personal details, payment information, yields and field locations. Information should be handled fairly, transparently and securely.</p>
+          <div class="act-card"><span class="act-mark">§</span><div><strong>Protection of Personal Information Act</strong><p>POPIA is South Africa's framework for protecting personal information and regulating how it is processed.</p><a href="https://www.gov.za/documents/protection-personal-information-act" target="_blank" rel="noreferrer">Read about POPIA <span aria-hidden="true">↗</span></a></div></div>
+        </div>
+        <div class="privacy-list">
+          <article><span class="privacy-number">01</span><div><h3>Be transparent</h3><p>Explain what is collected, why it is needed, who can access it and how long it will be kept.</p></div></article>
+          <article><span class="privacy-number">02</span><div><h3>Limit access by role</h3><p>Retailers may need confirmed stock, but should not see individual farmers' payment information.</p></div></article>
+          <article><span class="privacy-number">03</span><div><h3>Secure the records</h3><p>Use strong passwords, multi-factor authentication where available, encrypted backups and a breach-response plan.</p></div></article>
+          <article><span class="privacy-number">04</span><div><h3>Agree on data sharing</h3><p>A written agreement should specify permitted uses, access, retention, benefit sharing and what happens when a partnership ends.</p></div></article>
+          <article><span class="privacy-number">05</span><div><h3>Keep farmers involved</h3><p>Farmers should understand how their data is used and have a clear way to ask questions and correct inaccurate personal information.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ai-section" id="ai">
+      <div class="container">
+        <div class="section-heading section-heading-wide">
+          <p class="eyebrow">05 / AI & DECISION SUPPORT</p>
+          <h2>Technology should support judgement, <em>not replace it.</em></h2>
+          <p>A decision support system combines data, analysis and an understandable interface to help people choose what to do next.</p>
+        </div>
+        <div class="analytics-ladder">
+          <article class="ladder-step"><span class="ladder-level">01</span><div><span class="ladder-type">DESCRIPTIVE</span><h3>What happened?</h3><p>Review last season's yield per farm or the quantity received this week.</p></div><span class="ladder-symbol">▥</span></article>
+          <article class="ladder-step"><span class="ladder-level">02</span><div><span class="ladder-type">DIAGNOSTIC</span><h3>Why did it happen?</h3><p>Investigate a lower yield by comparing relevant farm, soil or rainfall records.</p></div><span class="ladder-symbol">⌕</span></article>
+          <article class="ladder-step"><span class="ladder-level">03</span><div><span class="ladder-type">PREDICTIVE</span><h3>What might happen?</h3><p>Estimate future tomato yields using suitable historical and weather information.</p></div><span class="ladder-symbol">↗</span></article>
+          <article class="ladder-step"><span class="ladder-level">04</span><div><span class="ladder-type">PRESCRIPTIVE</span><h3>What could we do?</h3><p>Compare possible harvest or delivery plans based on supply, weather and capacity.</p></div><span class="ladder-symbol">✳</span></article>
+        </div>
+        <div class="ai-bottom-grid">
+          <div class="ai-example"><span class="example-label">ILLUSTRATIVE ALERT</span><div class="weather-icon" aria-hidden="true">☁</div><div><strong>Heavy rain is forecast.</strong><p>Consider harvesting ready tomatoes earlier and checking transport arrangements.</p><span class="alert-foot">Advice for review · Not an automated instruction</span></div></div>
+          <div class="ai-guidance"><h3>Start with the basics</h3><ul><li>Digitise essential records first.</li><li>Pilot one tool for one real problem.</li><li>Choose mobile-friendly or SMS alerts where appropriate.</li><li>Check that recommendations fit local conditions.</li><li>Keep the farmer or manager responsible for the final decision.</li></ul></div>
+        </div>
+        <p class="fine-print">AI tools can be expensive, depend on connectivity and perform poorly when data or local calibration is inadequate. The project recommends improving data discipline before adopting complex AI.</p>
+      </div>
+    </section>
+
+    <section class="section section-light" id="systems">
+      <div class="container">
+        <div class="section-heading section-heading-wide">
+          <p class="eyebrow">06 / ENTERPRISE SYSTEMS</p>
+          <h2>Connect the records, not just the devices.</h2>
+          <p>Integration allows an update in one part of the supply chain to inform the next participant, reducing repeated data entry and delays.</p>
+        </div>
+        <div class="before-after">
+          <article class="flow-card flow-before">
+            <span class="flow-label">BEFORE INTEGRATION</span>
+            <h3>Disconnected records</h3>
+            <div class="manual-flow"><span>Paper notebook</span><b>→</b><span>Spreadsheet</span><b>→</b><span>Email / WhatsApp</span><b>→</b><span>Re-typed order sheet</span></div>
+            <ul><li>Repeated manual entry</li><li>Inconsistent formats</li><li>Delayed updates and mismatches</li></ul>
+          </article>
+          <article class="flow-card flow-after">
+            <span class="flow-label">AFTER INTEGRATION</span>
+            <h3>Connected information</h3>
+            <div class="connected-flow"><div class="connected-node">Harvest record</div><div class="connector">↓ updates</div><div class="connected-node node-main">Shared inventory</div><div class="connector">↓ informs</div><div class="connected-node">Delivery & order plan</div></div>
+            <ul><li>One consistent batch reference</li><li>Better stock visibility</li><li>Faster follow-up on exceptions</li></ul>
+          </article>
+        </div>
+        <div class="system-options">
+          <article><span class="option-tag">OPTION A</span><h3>Start with existing tools</h3><p>Standardise current spreadsheets and forms before replacing everything. Connect the most painful process first.</p></article>
+          <article><span class="option-tag">OPTION B</span><h3>Configure a platform</h3><p>Consider a configurable or open-source ERP option when the cooperative has the skills and resources to support it.</p></article>
+          <article><span class="option-tag">OPTION C</span><h3>Adopt a specialist system</h3><p>Consider a supply-chain platform such as eProd when traceability, compliance or scale justifies the cost.</p></article>
+        </div>
+        <p class="fine-print">Platform costs and features can change. The project report discusses eProd, AGRIFRIK and AgriOS; any real purchase should be based on current vendor information and the cooperative's requirements.</p>
+      </div>
+    </section>
+
+    <section class="section recommendations-section" id="recommendations">
+      <div class="container recommendations-grid">
+        <div class="section-heading">
+          <p class="eyebrow">07 / CUSTOMISATION & NEXT STEPS</p>
+          <h2>Make the system fit the <em>people who use it.</em></h2>
+          <p>A large, expensive rollout is not the recommended starting point. The cooperative should define its biggest information problem, test a small solution and expand only when it proves useful.</p>
+          <a class="button button-primary" href="#references">Explore the references <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="roadmap">
+          <article><span>01</span><div><h3>Understand the need</h3><p>Consult farmers, cooperative staff, processors and retailers. Prioritise the problems with the greatest impact.</p></div></article>
+          <article><span>02</span><div><h3>Design for local conditions</h3><p>Plan for intermittent connectivity, different digital skill levels, familiar language and mobile access.</p></div></article>
+          <article><span>03</span><div><h3>Pilot with a small group</h3><p>Start with a few farms and one processor. Agree on common fields and batch IDs, then train the people entering records.</p></div></article>
+          <article><span>04</span><div><h3>Evaluate and improve</h3><p>Track a few verifiable indicators, gather feedback, fix problems and expand only if the pilot works.</p></div></article>
+        </div>
+      </div>
+      <div class="container final-callout"><div><span class="callout-icon">✳</span><div><h3>The central recommendation</h3><p>Build trustworthy records and clear responsibilities first. Add dashboards, integration and AI only when they solve a defined problem.</p></div></div><span class="callout-end">START SMALL<br>IMPROVE TOGETHER</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">✳</span><span><strong>From Farm to Market</strong><small>INF1781 · Group Project</small></span></a>
+      <p>An academic case study on information systems for a South African smallholder tomato cooperative.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+    </div>
+    <div class="container footer-bottom"><span>Belgium Campus iTversity</span><span>Conceptual demonstration · Not a live operational system</span></div>
+  </footer>
+</body>
+</html>
